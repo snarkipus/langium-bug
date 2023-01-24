@@ -1,0 +1,57 @@
+{
+  "name": "block-madness",
+  "scopeName": "source.block-madness",
+  "fileTypes": [
+    ".blocks"
+  ],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "name": "keyword.control.block-madness",
+      "match": "\\b(Goodbye|Hello|person)\\b"
+    },
+    {
+      "name": "string.quoted.double.block-madness",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
+      "name": "string.quoted.single.block-madness",
+      "begin": "'",
+      "end": "'"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.block-madness",
+          "begin": "/\\*",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.block-madness"
+            }
+          },
+          "end": "\\*/",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.block-madness"
+            }
+          }
+        },
+        {
+          "begin": "//",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.whitespace.comment.leading.block-madness"
+            }
+          },
+          "end": "(?=$)",
+          "name": "comment.line.block-madness"
+        }
+      ]
+    }
+  }
+}

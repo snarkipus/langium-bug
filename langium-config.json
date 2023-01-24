@@ -1,0 +1,12 @@
+{
+    "projectName": "BlockMadness",
+    "languages": [{
+        "id": "block-madness",
+        "grammar": "src/language-server/block-madness.langium",
+        "fileExtensions": [".blocks"],
+        "textMate": {
+            "out": "syntaxes/block-madness.tmLanguage.json"
+        }
+    }],
+    "out": "src/language-server/generated"
+}
